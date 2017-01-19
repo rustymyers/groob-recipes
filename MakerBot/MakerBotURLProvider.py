@@ -15,7 +15,7 @@ USER_AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) "
               "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 "
               "Safari/537.36")
 MAKE_BASE_URL = "https://www.makerbot.com/download-desktop/"
-re_dmg = re.compile(r'([^"]+\.dmg)')
+re_dmg = re.compile(r'(https:\/\/downloads\.makerbot\.com\/makerware\/MakerBot Bundle ([A-z0-9._ ]+).dmg)')
 
 class MakerBotURLProvider(Processor):
     description = "Provides URL to the latest MakerBot Desktop Bundle."
